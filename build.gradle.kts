@@ -1,7 +1,13 @@
+
 plugins {
     java
     application
+
+    id("org.danilopianini.unibo-oop-gradle-plugin") version "1.1.79"
 }
+
+java { toolchain { languageVersion.set(JavaLanguageVersion.of(21)) } }
+
 
 group = "com.marvelsnap"
 version = "1.0-SNAPSHOT"
